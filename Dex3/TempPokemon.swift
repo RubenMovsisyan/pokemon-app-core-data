@@ -91,7 +91,6 @@ struct TempPokemon: Decodable {
             default:
                 print("")
             }
-            let value = try statsDictContainer.decode(String.self, forKey: .value)
         }
     
         let spriteContainer = try container.nestedContainer(keyedBy: PokemonKeys.SpriteKeys.self, forKey: .sprites)
