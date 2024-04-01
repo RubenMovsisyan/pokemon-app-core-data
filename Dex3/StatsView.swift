@@ -26,7 +26,7 @@ struct StatsView: View {
         .frame(height: 200)
         .padding([.leading, .bottom, .trailing])
         .foregroundStyle(Color(pokemon.types![0].capitalized))
-        .chartXScale(domain: 0...pokemon.highestStat.value+5)
+        .chartXScale(domain: 0...pokemon.highestStat.value + 10)
     }
 }
 

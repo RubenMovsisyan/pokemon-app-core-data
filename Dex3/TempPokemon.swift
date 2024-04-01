@@ -36,8 +36,8 @@ struct TempPokemon: Decodable {
         }
         
         enum StatDictKeys: String, CodingKey {
-            case value
-            case stat = "base_stat"
+            case value = "base_stat"
+            case stat
             
             enum StatKeys: String, CodingKey {
                 case name
